@@ -1,4 +1,4 @@
-# lasercut
+# Lasercut
 
 PCB and case for an "iso" 72 key mechanical keyboard
 
