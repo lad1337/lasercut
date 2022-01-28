@@ -25,8 +25,13 @@ render:
     cd case
     go run main.go
 
+This will render svg, eps and dxf files
 
-![rendered image from fusion](case/render.png)
+
+![3D render top side view](case/render-main.png)
+![3D render side view](case/render-side.png)
+
+Example render in fusion with stainless steel and brass
 
 ## PCB
 
