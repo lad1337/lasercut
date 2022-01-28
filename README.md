@@ -25,13 +25,24 @@ render:
     cd case
     go run main.go
 
-This will render svg, eps and dxf files
+This will render svg, eps and dxf files.
+These can be used with any CAD software.
 
+You will need the following plates:
+
+- 1x switch plate in 1.5mm
+- 1x closed with magnets inserts in 3mm (not automatically rendered!!)
+- 2x closed in 3mm
+- 1x switch in 1.5mm
+- 1x open in 3mm
+- 1x bottom in 1-3mm
+
+
+Example render in fusion with stainless steel and brass
 
 ![3D render top side view](case/render-main.png)
 ![3D render side view](case/render-side.png)
 
-Example render in fusion with stainless steel and brass
 
 ## PCB
 
