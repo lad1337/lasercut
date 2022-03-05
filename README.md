@@ -46,4 +46,14 @@ Example render in fusion with stainless steel and brass
 
 ## PCB
 
-has to be redone for split space and new case
+### Schematic
+
+i forgot which tool i used to generate a the matrix
+
+### PCB
+
+using the [keylayout plugin](https://github.com/adamws/kicad-kbplacer)
+
+and then [freerouting](https://github.com/freerouting/freerouting)
+    
+    /usr/local/opt/openjdk@11/bin/java -jar ~/Downloads/freerouting-1.4.4-linux-x64/lib/app/freerouting-executable.jar -de ~/workspace/lasercut/pcb/lasercut.dsn

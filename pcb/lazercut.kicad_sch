@@ -4058,7 +4058,7 @@
     (property "Value" "Elite-C" (id 1) (at 247.65 44.45 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "Keebio-Parts:Elite-C-castellated-29pin-holes" (id 2) (at 274.32 125.73 90)
+    (property "Footprint" "Keebio-Parts:Elite-C" (id 2) (at 274.32 125.73 90)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "Datasheet" "" (id 3) (at 274.32 125.73 90)
@@ -4539,7 +4539,7 @@
       (reference "SW72") (unit 1) (value "SW_Push") (footprint "MX_Only:MXOnly-1U-Hotswap-Antishear")
     )
     (path "/46b40999-db6c-4eb1-909b-b2a975a24c4d"
-      (reference "U1") (unit 1) (value "Elite-C") (footprint "Keebio-Parts:Elite-C-castellated-29pin-holes")
+      (reference "U1") (unit 1) (value "Elite-C") (footprint "Keebio-Parts:Elite-C")
     )
   )
 )

@@ -333,7 +333,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "test.kicad_pro",
+    "filename": "lazercut.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -366,7 +366,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "specctra_dsn": "test.dsn",
+      "specctra_dsn": "lasercut.dsn",
       "step": "",
       "vrml": ""
     },
