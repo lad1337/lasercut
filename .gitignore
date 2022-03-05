@@ -1,1 +1,5 @@
 .DS_Store
+
+logs/
+pcb/keyautoplace.log
+pcb/lazercut-backups/
