@@ -2,4 +2,5 @@
 
 logs/
 pcb/keyautoplace.log
-pcb/lazercut-backups/
+pcb/lasercut-backups/
+pcb/fp-info-cache
