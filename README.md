@@ -52,8 +52,11 @@ i forgot which tool i used to generate a the matrix
 
 ### PCB
 
-using the [keylayout plugin](https://github.com/adamws/kicad-kbplacer)
+![full board schematics](pcb/lasercut.schematic.png)
+![3D render of PCB backside](pcb/lasercut.3d.png)
 
-and then [freerouting](https://github.com/freerouting/freerouting)
+* convert the KLE json with https://adamws.github.io/kle-serial/ [src](https://github.com/adamws/kicad-kbplacer)
+* using the [keylayout plugin](https://github.com/adamws/kicad-kbplacer)
+* then [freerouting](https://github.com/freerouting/freerouting)
     
     /usr/local/opt/openjdk@11/bin/java -jar ~/Downloads/freerouting-1.4.4-linux-x64/lib/app/freerouting-executable.jar -de ~/workspace/lasercut/pcb/lasercut.dsn
