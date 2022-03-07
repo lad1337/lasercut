@@ -5,13 +5,13 @@
   )
   (autoroute_settings
     (fanout off)
-    (eu.mihosoft.freerouting.autoroute on)
+    (app.freerouting.autoroute on)
     (postroute on)
     (vias on)
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 15351)
+    (start_pass_no 31446)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -70,8 +70,7 @@
     col7 "Net-(D58-Pad1)" "Net-(D59-Pad1)" "Net-(D60-Pad1)" "Net-(D61-Pad1)" "Net-(D62-Pad1)" "Net-(D63-Pad1)" "Net-(D64-Pad1)"
     "Net-(D65-Pad1)" col8 "Net-(D66-Pad1)" "Net-(D67-Pad1)" "Net-(D68-Pad1)" "Net-(D69-Pad1)" "Net-(D70-Pad1)" "Net-(D71-Pad1)"
     "Net-(D72-Pad1)" row0 row1 row2 row3 row4 row5 row6
-    row7 GND "unconnected-(U1-Pad21)" "unconnected-(U1-Pad22)" "unconnected-(U1-Pad29)" "unconnected-(U1-Pad28)" "unconnected-(U1-Pad27)" "unconnected-(U1-Pad26)"
-    "unconnected-(U1-Pad25)"
+    row7 "unconnected-(U1-Pad21)" "unconnected-(U1-Pad22)" "unconnected-(U1-Pad29)" "unconnected-(U1-Pad28)" "unconnected-(U1-Pad27)" "unconnected-(U1-Pad26)" "unconnected-(U1-Pad25)"
     (clearance_class default)
     (via_rule default)
     (rule
@@ -92,7 +91,7 @@
     )
   )
   (class POWER
-    BAT
+    GND BAT
     (clearance_class POWER)
     (via_rule POWER)
     (rule
