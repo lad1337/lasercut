@@ -46,7 +46,10 @@ Example render in fusion with stainless steel and brass
 
 ## PCB
 
-### board edge
+![full board schematics](pcb/lasercut.schematic.png)
+![3D render of PCB backside](pcb/lasercut.3d.png)
+
+### Board edge
 
 add the generated `./case/Lasercut_bottom.dxf` to the board and position:
 
@@ -55,23 +58,29 @@ add the generated `./case/Lasercut_bottom.dxf` to the board and position:
 
 TODO: mounting holes
 
-### ProMicro position
+### Netlist
 
+prerequisite: 
+
+- `kle2netlist` installed, see https://github.com/lad1337/kle2netlist
+    this will create a netlist from the kle json
+- `kicad-kbplacer` kicad plugin installed, see https://github.com/lad1337/kicad-kbplacer
+    this is a plugin that will place the swiches to the right place as well as create some tracks
+- `node` and `npm install @ijprest/kle-serial --save` 
+    this is needed for converting the kle json to its internal format
+
+
+Steps:
+
+- run:
+    `make netlist`
+- import the netlist into pcbnew
+- run the kicad-kbplacer plugin
+- rearrage the controller
+
+    ```
     x: 335.4
     y: 72.6
     roation: 180
-
-### Schematic
-
-i forgot which tool i used to generate a the matrix
-
-### PCB
-
-![full board schematics](pcb/lasercut.schematic.png)
-![3D render of PCB backside](pcb/lasercut.3d.png)
-
-* convert the KLE json with https://adamws.github.io/kle-serial/ [src](https://github.com/ijprest/kle-serial)
-* using the [keylayout plugin](https://github.com/adamws/kicad-kbplacer)
-* then [freerouting](https://github.com/freerouting/freerouting)
-    
-    /usr/local/opt/openjdk@11/bin/java -jar ~/Downloads/freerouting-1.5.0.jar -de ~/workspace/lasercut/pcb/lasercut.dsn -us global -is prioritized
+    ```
+- finish all the other tracks
