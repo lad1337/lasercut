@@ -46,6 +46,21 @@ Example render in fusion with stainless steel and brass
 
 ## PCB
 
+### board edge
+
+add the generated `./case/Lasercut_bottom.dxf` to the board and position:
+
+    x: 23.0
+    y: 19.94769
+
+TODO: mounting holes
+
+### ProMicro position
+
+    x: 335.4
+    y: 72.6
+    roation: 180
+
 ### Schematic
 
 i forgot which tool i used to generate a the matrix
