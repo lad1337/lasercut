@@ -399,7 +399,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "lastercut.net",
+      "netlist": "lasercut.net",
       "specctra_dsn": "lasercut.dsn",
       "step": "",
       "vrml": ""

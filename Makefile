@@ -11,9 +11,19 @@ convert:
 
 
 .PHONY: netlist
+netlist: export KICAD_SYMBOL_DIR = /Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols
 netlist: convert
-	# https://github.com/lad1337/kle2netlist
-	KICAD_SYMBOL_DIR=/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols kle2netlist --layout lasercut-converted.json --switch-library perigoso/keyswitch-kicad-library --no-xml --lib-path ./pcb/ --lib-path ./pcb/keebio-components --output-dir pcb --name lastercut --switch-footprint Hotswap --controller-circuit promicro
+	kle2netlist --layout lasercut-converted.json \
+		--switch-library perigoso/keyswitch-kicad-library \
+		--no-xml \
+		--lib-path ./pcb/ \
+		--lib-path ./pcb/keebio-components \
+		--output-dir pcb \
+		--name lasercut \
+		--switch-footprint Hotswap \
+		--controller-circuit promicro \
+		--pin-assign-type zig-zag \
+		--pin-reverse
 
 	
 .PHONY: traces
